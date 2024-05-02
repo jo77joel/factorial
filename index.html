@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACTORIAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Life+Savers&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Document</title>
     <script src="./java.js"></script>
 </head>
 <style>
@@ -12,35 +15,45 @@
         background-size: cover;
     }
     main{
-        font-size: 5vh;
+        font-family: "Poppins", sans-serif;
+        font-size: 4vh;
         color: antiquewhite;
         margin: auto;
+        display: flex;
+        flex-direction: column;
     }
     h1{
-        margin: 5%;
         text-align: center;
-        margin: auto;
+        background-color: rgba(47, 185, 174, 0.336);
     }
+
     input{
-        width: 30%;
-        padding: 1.5%;
-        border: solid 2px rgba(201, 60, 17, 0.801);
-        background-color: rgba(255, 68, 0, 0.096);
-        box-shadow: 1px 4px 10px coral;
+        width: 40vh;
+        padding: 3vh;
+        border: solid 2px rgba(10, 48, 33, 0.801);
+        background-color: rgba(17, 100, 54, 0.342);
+        box-shadow: 1px 4px 10px rgb(13, 116, 59);
         margin: 2%;
         color: aliceblue;
+        text-align: center;
     }
     ::placeholder{
-        color: rgb(233, 212, 27);
+        font-family: "Poppins", sans-serif;
+        color: rgb(55, 214, 175);
     }
     button{
-        width: 30%;
-        padding: 10px;
+        width: 50vh;
+        padding: 3vh;
         margin: 2%;
-        border: solid 2px rgba(201, 60, 17, 0.801);
-        background-color: rgba(255, 68, 0, 0.096);
-        box-shadow: 1px 4px 10px coral;
-        color: rgb(233, 212, 27);
+        border: solid 2px rgba(10, 48, 33, 0.801);
+        background-color: rgba(17, 100, 54, 0.342);
+        box-shadow: 1px 4px 10px rgb(13, 116, 59);
+        margin: 2%;
+        color: rgba(48, 211, 211, 0.747);
+    }
+    h3{
+        background-color: rgba(29, 126, 93, 0.342);
+        background-size: auto;
     }
 </style>
 <body>
@@ -51,22 +64,17 @@
         <h2>
             PARA RESOLVER ESTO HAY PASOS QUE SON LOS SIGUENTES
         </h2>
-        <h3>
-            1: PRIMERO
-        </h3>
-        <P>
-            <strong>1. Entender la fórmula:</strong> Comprende la fórmula que se proporciona y qué representa cada componente en el contexto del problema.
-            <br>
-            <strong>2. Identificar los valores conocidos:</strong> Determina qué valores o variables son conocidos y cuáles son desconocidos en el problema.
-            <br>
-            <strong>3. Sustituir los valores conocidos en la fórmula:</strong> Utiliza los valores conocidos y sustitúyelos en la fórmula para calcular el valor desconocido.
-            <br>
-            <strong>4. Aplicar operaciones matemáticas necesarias:</strong> Realiza cualquier operación matemática requerida por la fórmula, como sumar, restar, multiplicar, dividir, elevar a una potencia o tomar la raíz cuadrada, según sea necesario.
-            <br>
-            <strong>5. Resolver la fórmula:</strong> Realiza los cálculos necesarios utilizando los valores conocidos y las operaciones matemáticas adecuadas para obtener el resultado final.
-            <br>
-            <strong>6. Verificar y interpretar el resultado:</strong> Verifica que tu respuesta tenga sentido en el contexto del problema y asegúrate de interpretar correctamente el resultado.
-        </P>
+            <h3>1. Entender la fórmula:</h3> <p>Comprende la fórmula que se proporciona y qué representa cada componente en el contexto del problema.</p>
+
+            <h3>2. Identificar los valores conocidos:</h3> <p>Determina qué valores o variables son conocidos y cuáles son desconocidos en el problema.</p>
+
+            <h3>3. Sustituir los valores conocidos en la fórmula:</h3> <p>Utiliza los valores conocidos y sustitúyelos en la fórmula para calcular el valor desconocido.</p>
+
+            <h3>4. Aplicar operaciones matemáticas necesarias:</h3> <p>Realiza cualquier operación matemática requerida por la fórmula, como sumar, restar, multiplicar, dividir, elevar a una potencia o tomar la raíz cuadrada, según sea necesario.</p>
+
+            <h3>5. Resolver la fórmula:</h3> <p>Realiza los cálculos necesarios utilizando los valores conocidos y las operaciones matemáticas adecuadas para obtener el resultado final.</p>
+
+            <h3>6. Verificar y interpretar el resultado:</h3> <p>Verifica que tu respuesta tenga sentido en el contexto del problema y asegúrate de interpretar correctamente el resultado.</p>
         <input type="number" id="numero" placeholder="Ingrese un número entero">
         <button onclick="calcularFactorial()">Calcular Factorial</button>
         <p id="resultado"></p>
